@@ -3,6 +3,8 @@ import argparse
 
 from mmcv import Config
 from mmcv.runner import load_checkpoint
+import sys
+sys.path.append("/content/mmfashion")
 
 from mmfashion.apis import (get_root_logger, init_dist,
                             test_geometric_matching, test_tryon)

@@ -28,6 +28,7 @@ extracted_features/
 # *.jpeg
 *.pth
 *.pth.tar
+
 *.txt
 *.zip
 *.swo
@@ -37,6 +38,9 @@ extracted_features/
 *.npy
 *.tar
 *.tar.gz
+
+!test_pairs.txt
+!train_pairs.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
