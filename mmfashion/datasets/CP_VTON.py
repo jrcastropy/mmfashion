@@ -33,7 +33,7 @@ class CPVTONDataset(Dataset):
         self.radius = radius
         self.data_path = os.path.join(self.dataroot, datamode)
 
-        normalize = transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+        normalize = transforms.Normalize((0.5,), (0.5,))
         self.transform = transforms.Compose([transforms.ToTensor(), normalize])
 
         # load data list
